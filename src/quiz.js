@@ -24,22 +24,25 @@ class Quiz {
             const randomIndex = Math.floor(Math.random() * (index + 1));
             [this.questions[index], this.questions[randomIndex]] = [this.questions[randomIndex], this.questions[index]];
         });
+
+
+
+       // this.questions.sort(()=> .5 - Math.random())
     }
 
 
-    // debe incrementar 'correctAnswers' en 1 cuando se pasa una respuesta correcta como argumento
-    //    debe comprobar si la respuesta es correcta comparándola con la propiedad 'answer' de la pregunta actual
-    checkAnswer(answer){
-        if(this.questions[this.currentQuestionIndex] === answer){
-            this.correctAnswers++
-        }
-    }
 
-}
-    
-        
-   
 
     // 5. checkAnswer(answer)
 
-    // 6. hasEnded()
+    const currentQuestion = this.questions[this.currentQuestionIndex]
+
+    if (answer === currentQuestion.answer ){
+        this.correctAnswers++
+    }
+
+    // 6. hasEnded(){
+
+    }
+    
+}

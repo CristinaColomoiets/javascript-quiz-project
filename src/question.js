@@ -14,6 +14,10 @@ class Question {
     });
 
 
+//this.choices.sort(() => .5 - Math.Random())
+
+
+
    }
 }
 
