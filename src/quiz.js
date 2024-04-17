@@ -21,9 +21,6 @@ class Quiz {
         this.questions.sort(() => .5 - Math.random());
     }
 
-
-
-
     checkAnswer(answer){
         const currentQuestion = this.getQuestion()
         const currentAnswer = currentQuestion.answer
@@ -33,8 +30,6 @@ class Quiz {
             this.correctAnswers++
         }
     }
-
-
 
     hasEnded(){
         if (this.currentQuestionIndex >= this.questions.length) {

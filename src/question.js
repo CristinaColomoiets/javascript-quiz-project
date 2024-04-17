@@ -1,6 +1,6 @@
 // 
 class Question {
-    
+
    constructor(textValue, choicesValue, answerValue, difficultyValue){
     this.text = textValue;
     this.choices = choicesValue;
@@ -9,7 +9,7 @@ class Question {
    }
 
    shuffleChoices(){
-       this.choices.sort(() => .5 - Math.Random());
+       this.choices.sort(() => .5 - Math.random());
    }
 
 }
