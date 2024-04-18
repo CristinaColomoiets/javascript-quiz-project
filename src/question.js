@@ -1,4 +1,4 @@
-// 
+
 class Question {
 
    constructor(textValue, choicesValue, answerValue, difficultyValue){

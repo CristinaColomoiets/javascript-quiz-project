@@ -107,8 +107,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // 2. Update the green progress bar
     // Update the green progress bar (div#progressBar) width so that it shows the percentage of questions answered
     
-    const percentage = ( quiz.currentQuestionIndex / quiz.questions.length ) * 100
-    progressBar.style.width = percentage; 
+    const percentage = ( quiz.currentQuestionIndex / quiz.questions.length ) * 100;
+    progressBar.style.width = `${percentage}%`; 
     console.log('-------', percentage)
     
     
@@ -138,20 +138,20 @@ document.addEventListener("DOMContentLoaded", () => {
    
    question.choices.forEach((eachChoice)=>{
      
-     let input = document.createElement('input');
-     input.type = 'radio';
-     input.name = 'choice';
-     input.value = eachChoice;
-     
-     let label = document.createElement('label');
-     label.innerHTML = eachChoice
-     
-     
-     let breakLine = document.createElement('br');
-     
-     choiceContainer.appendChild(input);
-     choiceContainer.appendChild(label);
-        choiceContainer.appendChild(breakLine);
+    let input = document.createElement('input');
+    input.type = 'radio';
+    input.name = 'choice';
+    input.value = eachChoice;
+    
+    let label = document.createElement('label');
+    label.innerHTML = eachChoice
+    
+    
+    let breakLine = document.createElement('br');
+    
+    choiceContainer.appendChild(input);
+    choiceContainer.appendChild(label);
+    choiceContainer.appendChild(breakLine);
 
       })
 
