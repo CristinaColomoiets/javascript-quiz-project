@@ -153,37 +153,36 @@ document.addEventListener("DOMContentLoaded", () => {
     choiceContainer.appendChild(label);
     choiceContainer.appendChild(breakLine);
 
-      })
+    })
 
   }
 
 
   
   function nextButtonHandler () {
-     // A variable to store the selected answer value
-     let selectedAnswer;
+    // A variable to store the selected answer value
+    let selectedAnswer;
 
 
     // YOUR CODE HERE:
     //
     // 1. Get all the choice elements. You can use the `document.querySelectorAll()` method.
       
-     const nextButton = document.querySelector('#nextButton');
-     nextButton.addEventListener('click', ()=>{
-      console.log('El boton esta conectado');
+    let allInputs = document.querySelectorAll('input');
+    const nextButton = document.querySelector('#nextButton');
+    nextButton.addEventListener('click', ()=>{
 
-      let allInputs = document.querySelectorAll('input');
-      console.log('Son nuestros inputs: ', allInputs);
-     })
+
+    });
 
     // 2. Loop through all the choice elements and check which one is selected
       // Hint: Radio input elements have a property `.checked` (e.g., `element.checked`).
       //  When a radio input gets selected the `.checked` property will be set to true.
       //  You can use check which choice was selected by checking if the `.checked` property is true.
 
-      allInputs.forEach(()=>{
+    allInputs.forEach(()=>{
         
-      })
+    })
 
       
     // 3. If an answer is selected (`selectedAnswer`), check if it is correct and move to the next question
